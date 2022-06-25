@@ -1,0 +1,163 @@
+/* 
+// Route - Full stack diploma C38 - SAT & TUE - ALEX
+// Date : 24-June-2022
+// exam # 2 - JS - APIs Movies App
+// Name : Bishoy Saeed Fayez
+// e-mail : bishoysfayez@gmail.com 
+// Mobile & Whatsapp : 01211351223 -->
+    
+    */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Lato", sans-serif;
+
+}
+
+input {
+    background-color: transparent !important;
+    color: #e1e1e1 !important;
+}
+.poster-container{
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.layer{
+    background-color: rgba(255, 246, 246, 0.7)!important;
+    color: black!important;
+    position: absolute;
+    z-index: 3;
+    padding: 1rem;
+    /* width: 100%!important; */
+    margin: 0;
+    height: 100%;
+    opacity: 0;
+    top: 100%;
+    transition: all ease-in-out 1s;    
+    box-sizing: border-box;
+    padding-top: 20%;
+}
+.poster-container:hover .layer{
+   opacity: 1;
+   /* height: 100%; */
+   top:0%
+} 
+
+aside{
+    /* background-color: white; */
+    display:flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 4;
+    height: 100vh;
+    top: 0;
+    /* width: 0; */
+}
+aside #main{
+    height: 100vh!important;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+.hidden{
+    visibility: hidden;
+}
+.logo i{
+    font-size:42px!important;
+}
+.icons-container i, .btnsContainer i{
+    font-size:32px!important;
+
+}
+.nav-link{
+    margin-top: 1000px;
+    font-size: 18px!important;
+}
+.form-part{
+    margin: auto auto;
+    text-align: center;
+    width: 80%;
+}
+.footer-logos{
+    display: relative;
+    bottom: 10px;
+    margin-top : 100px;
+}
+.footer-logos i{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.form-row{
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.form-row input{
+  margin: 10px 10px!important;
+  /* border-radius: 20px; */
+  border: 0px;
+  border-bottom: 2px solid white;
+}

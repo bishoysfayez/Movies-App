@@ -1,0 +1,498 @@
+/* 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Route - Full stack diploma C38 - SAT & TUE - ALEX
+Date : 4-May-2022
+Exam - HTML- CSS - Bootstrap
+Name : Bishoy Saeed Fayez
+e-mail : bishoysfayez@gmail.com 
+Mobile & Whatsapp : 01211351223
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ */
+
+
+ :root{
+    --mainColor:#e65f78 !important;
+  }
+  /* style for arlo *
+  
+  /* -------------------nav and landing page---------------------------- */
+  
+  .navbar-nav a{
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .navbar-nav .active{
+    color: var(--mainColor,red)!important;
+  }
+  .navbar-light{
+    background-color: #fff;
+  }
+  
+  
+  .landing-page .carousel-control-prev:hover , .landing-page .carousel-control-next:hover{
+    background-color: white!important;
+    color: var(--mainColor)!important;
+  }
+  
+  .landing-page{
+    background-image: url(../images/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh!important;
+  
+    background-size: cover;
+    color: #fff!important;
+    padding: 3.5rem;
+  }
+  
+  
+  .landing-page .landing-title{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+    /* background: #000; */
+  }
+  .landing-page .landing-title span{
+    color: var(--mainColor);
+  }
+  .landing-title .img-container{
+    width: 15%;
+  }
+  .landing-title img{
+    width: 100%;
+    border: 13px solid rgba(200,200,200,0.2);
+  }
+  .landing-page .landing-title p{
+    color: white;
+    font-size: 1.5rem;
+  }
+  .landing-page .landing-title p::after{
+    content: "|";
+    box-sizing: border-box;
+    /* border-left:6px solid #fff; */
+    margin-left: 4px;
+    animation-name: typing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  
+  }
+  
+  @keyframes typing{
+    0%{content:" F|"}
+    5%{content:" FREE|"}
+    10%{content:" FREELA|"}
+    15%{content:" FREELANC|"}
+    20%{content:" FREELANCER|"}
+    25%{content:" FREELAN|"}
+    30%{content:" FREE|"}
+    35%{content:" FR|"}
+    40%{content:" |"}
+    45%{content:" DE|"}
+    50%{content:" DEVE|"}
+    55%{content:" DEVELOP|"}
+    60%{content:" DEVELOPPE|"}
+    65%{content:" DEVELOPPER|"}
+    70%{content:" DEVELOP|"}
+    80%{content:" DEVE|"}
+    85%{content:" DE|"}
+    90%{content:" D|"}
+    95%{content:" D|"}
+    100%{content:" |"}
+  
+  }
+  
+  
+  
+  
+  
+  
+  /* --------- settings fixed icon ------------------ */
+  .settings{
+    right:0px;
+    top: 17%;
+    position: fixed;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .settings i{
+    font-size: 3rem!important;
+  }
+  .zipper{
+    width: 80px;
+    height: 160px;
+    background-color: transparent;
+    transform: rotateX(90)!important;
+    /* position: absolute; */
+    bottom: 0%;
+    left: 45%;
+    margin: 1rem auto;
+    /* border: 2px solid white; */
+    overflow: hidden;
+  }
+  
+  .animated-dot{
+   
+    margin: auto;
+    color: #fff;
+    font-size: 2rem;
+    height: 10px;
+    width: 10px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: go-down;
+  }
+  @keyframes go-down {
+    0%{
+      margin-top:1%;
+      
+   }
+   20%{
+    margin-top:70%;
+   }
+   40%{
+    margin-top:100%;
+   }
+   60%{
+    margin-top:50%;
+   }
+   80%{
+    margin-top: 100%;
+    
+  }
+   100%{
+     margin-top: 1%;
+     }
+  }
+  
+  
+  
+  .section-title p{
+    font-size: 1.1rem;
+    margin: auto;
+    color: var(--mainColor);
+  }
+  /* ------------------ section 2- about ------------ */
+  #about .img-animation-parent {
+    /* border: 1px solid; */
+    padding: 10px;
+    /* border: 10px solid black; */
+    box-sizing: content-box;
+  }
+  #about .img-animation-child{
+    bottom: 20%;
+    left: 10%;
+  }
+  #about .img-animation-child:before{
+    content: "";
+    position: absolute;
+    border: 10px solid black;
+    width: 105%;
+    height: 105%;
+    top: 8%;
+    left: 4%;
+    z-index: -1;
+  }
+  .img-animation-parent:hover{
+    animation-duration: 1s;
+    animation-name: hovering-img;
+    animation-iteration-count: infinite;
+    margin: auto;
+  }
+  @keyframes hovering-img{
+    0%{
+      margin-left: 0%;
+    }
+    100%{
+      margin-left: 3%;
+    }
+  }
+  .text-red{
+    color: var(--mainColor);
+  }
+  .about_title-typer{
+    /* color: #e65f78; */
+  }
+  .about_title-typer h3::after{
+    color: var(--mainColor);
+    content: "";
+    box-sizing: border-box;
+    /* border-left:6px solid black; */
+    margin-left: 4px;
+    animation-name: typing-2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  
+  }
+  
+  @keyframes typing-2{
+    0%{content:" F"}
+    5%{content:" FREE"}
+    10%{content:" FREELA"}
+    15%{content:" FREELANC"}
+    20%{content:" FREELANCER"}
+    25%{content:" FREELAN"}
+    30%{content:" FREE"}
+    35%{content:" FR"}
+    40%{content:" "}
+    45%{content:" DE"}
+    50%{content:" DEVE"}
+    55%{content:" DEVELOP"}
+    60%{content:" DEVELOPPE"}
+    65%{content:" DEVELOPPER"}
+    70%{content:" DEVELOP"}
+    80%{content:" DEVE"}
+    85%{content:" DE"}
+    90%{content:" D"}
+    95%{content:" D"}
+    100%{content:" "}
+  } 
+  #about .text-muted{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  #about .info-table tr td{
+    font-size: 1rem;
+  }
+  #about .table-bold-text, table tr td{
+    font-size: 01rem;
+  }
+  #about button{
+    background-color: var(--mainColor);
+    color: white;
+    border: transparent;
+   font-size: 1rem;
+   width: 70%;
+  }
+  
+  
+  
+  /* ------------------ section 3 Services ------------ */
+  #services, #news{
+      background-color: rgba(200,200,200,0.2);
+  }
+  #services .service-single{
+    padding: 2rem;
+    box-sizing: content-box;
+  }
+  
+  #services .service-text{
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  
+  #services .icon *, #contact .icon *{
+    font-size: 3rem;
+    color: var(--mainColor)!important;
+    font-weight: 100;
+    text-align: right;
+  }
+  #services .service-text h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  #services .service-text p{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: rgba(50, 50, 50,0.9);
+  }
+  #services .service-text:hover h3{
+    color: var(--mainColor);
+  }
+  .services-end-text a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    position: relative;
+  }
+  .services-end-text a::before{
+      content: '';
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: auto;
+      right: 0;
+      bottom: 3px;
+      background: rgba(0,0,0,.2);
+  }
+  .services-end-text a::after{
+  content: '';
+  
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: auto;
+  right: 0;
+  bottom: 3px;
+  transition: width .6s;
+  background: black;
+  }
+  .services-end-text:hover a::after{
+    width: 100%;
+  }
+  
+  
+  /* section portoflio */
+  #portofolio .img-container{
+  /* border: 3px solid red; */
+  position: relative;
+  }
+  #portofolio .img-container img{
+    height: 350px;
+  }
+  #portofolio .nav-pills .nav-item button{
+    font-weight: 500!important;
+    color: black;
+  
+  }
+  #portofolio .nav-pills .nav-item button:hover{
+    color: var(--mainColor)!important;
+  
+  }
+  #portofolio .nav-pills .nav-item .active{
+    color: var(--mainColor)!important;
+    background-color: transparent;
+  }
+  #portofolio .nav-pills .nav-item{
+    background-color: transparent;
+  }
+  #portofolio .img-container{
+    overflow: hidden;
+  }
+  #portofolio .img-container img{
+    transition: all 1s ease-in-out;
+  }
+  #portofolio .img-container:hover img{
+    transform: scale(1.2);
+  }
+  #portofolio .layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+  
+  }
+  #portofolio .layer a{
+    font-size: 1.5rem;
+    color: white;
+    margin: 70% auto;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+  }
+  #portofolio .layer:hover{
+    opacity: 1;
+  }
+  #portofolio .layer:hover a{
+    margin: 50% auto;
+  }
+  
+  
+  /* ----- numbers section ----- */
+  
+  .numbers{
+    background-image: url(../images/rubber.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: #fff!important;
+    padding: 3.5rem;
+  }
+  .numbers *{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+  /* ----- news section ----- */
+  #news .card .img-container{
+    overflow: hidden;
+  }
+  #news .card .card-img-top{
+    transition: all 2s ease-in-out;
+  
+  }
+  #news .card img.card-img-top:hover {
+    transform: rotateZ(10deg) scale(1.2);
+  }
+  
+  /* ------------------ section - contact ------------ */
+  
+  #contact *{
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  
+  
+  
+  
+  .form-container input{
+    width: 100%;
+    background-color: white!important;
+    color: rgba(200,200,200,0.6);
+    /* box-sizing:content-box; */
+    /* padding: auto 2rem!important; */
+  }
+  
+  .form-container button{
+    margin: 1rem;
+    font-size: 1rem;
+    background-color:var(--mainColor)!important;
+    border: 0px;
+    color: white;
+    padding: auto 1rem;
+  }
+  .form-container button i{
+    font-size: 2rem!important;
+  }
+  .form-container button:hover{
+    opacity: 0.5;
+    color: white;
+  }
+  .form-container input:focus,.form-container textarea:focus{
+    border-color:var(--mainColor)!important;
+    box-shadow: 0 0 0 8px rgba(242,84,84,.0)!important;
+  }
+  .form-container textarea{
+    width: 100%;
+    resize: none;
+    border: 1px solid rgba(53, 4, 4, 0.2);
+    border-radius: 0.3rem;
+    background-color: white!important;
+  }
+  
+  .form-container textarea:focus{
+    border-style:solid;
+    outline: none;
+  }
+  
+  
+  
+  /* ------------------ section - footer ------------ */
+  #footer *{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  #footer .footer-icons *{
+    color: white!important;
+    margin: 1rem auto;
+    
+  }
+  #footer .footer-icons a{
+    color: white!important;
+    margin: 1rem auto;
+    font-size: .1rem!important;
+  }
+  #footer .footer-icons{
+    align-items: center!important;
+  }
+  #footer p{
+    color: white!important;
+    font-size: .5rem!important;
+  }
+  
